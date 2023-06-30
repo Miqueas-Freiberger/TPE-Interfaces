@@ -33,3 +33,12 @@ div.colabora .btn-colaborar{
     color: #E9E9E9;
     font-size: 22px;
 }
+
+div.banner-chicas {
+    display: flex;
+    justify-content: center;
+}
+
+div.banner-chicas img.foto-chicas{
+    width: 100%;
+}

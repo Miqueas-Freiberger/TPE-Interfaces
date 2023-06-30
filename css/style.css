@@ -1,0 +1,35 @@
+*{
+    font-family: "Montserrat", sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+div.content{
+    margin-left: -2%;
+    margin-right: -2%;
+}
+div.colabora{
+    display: flex;
+    justify-content: center;
+}
+div.colabora img.foto-hogar{
+    width: 100%;
+}
+
+div.colabora .btn-colaborar{
+    position: absolute;
+    top: 14rem;
+    width: 150px;
+    height: 40px;
+    border-radius: 9px;
+    outline: 0;
+    border: none;
+    background-color: #E98F25;
+    color: #E9E9E9;
+    font-size: 22px;
+}

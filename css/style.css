@@ -101,4 +101,135 @@ div.novedad-1 img,div.novedad-2 img{
     } 
 }
 
+div.testimonios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+
+div.testimonio-1{
+    margin-top: 5%;
+}
+
+
+div.testimonio-1,div.testimonio-2{
+   text-align: center;
+    margin-bottom: 10%;
+    width: 30%;
+}
+
+@media (max-width: 1000px) {
+    div.testimonio-1,div.testimonio-2{
+        margin-bottom: 10%;
+        width: 70%;
+    }   
+}
+
+div.testimonio-1 img,div.testimonio-2 img{
+    width: 100%;
+}
+
+div.box-btn-testimonios {
+    width: 96px;
+height: 28px;
+
+border-right: 18;
+border-left: 221;
+}
+
+
+div.testimonios button.btn-testimonios{
+    
+    width: 30%;
+    
+    color: #E9E9E9;
+    border-radius: 9px;
+    padding: 2%;
+    outline: 0;
+    border: none;
+    background-color: #E98F25;
+    color: #E9E9E9;
+    font-size: 20px;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    align-self: end;
+}
+
+div.vostambien {
+    background: #FFDFBA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+div.vostambien div.titulo {
+    margin-top: 5%;
+    text-align: center;
+    width: 50%;
+}
+
+div.vostambien div.subtitulo {
+    text-align: center;
+    width: 60%;
+}
+
+div.vostambien button.btn-asociarme, div.vostambien button.btn-unicavez {
+    margin: 5%;
+    width: 200px;
+    height: 60px;
+    border-radius: 9px;
+    outline: 0;
+    border: none;
+    background-color: #E98F25;
+    color: #E9E9E9;
+    font-size: 22px;
+}
+
+div.vostambien button.btn-unicavez{
+    margin-bottom: 10%;
+}
+
+footer{
+    text-decoration: #E98F25;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.redes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+    
+}
+
+div.redes img{
+    width: 30%
+}
+
+footer p{
+    
+    color: #E98F25;
+    margin: 0%;
+}
+ footer h1{
+    font-weight: bolder;
+    color: #E98F25;
+    margin-bottom: 10%;
+ }
+
+ footer .contactate, .seguinos {
+    margin-top: 10%;
+    margin-bottom: 2%;
+ }
+
+ footer .logo{
+    width: 30%;
+    margin-top: 5%;
+ }
+ 
 

@@ -4,16 +4,40 @@
 html{
     width: 98.4%;
 }
+
+body{
+    width: 100%;
+}
 header{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: white;
     padding-left: 13px;
     padding-right: 13px;
-    height: 65px;
+    height: 15%;
+    border-bottom: 2px solid grey;
 }
+
+div.hogar-logo-1 img {
+    height: 70px;
+}
+
+div.hogar-logo-2 {
+    margin-right: 0%;
+}
+
+div.hogar-logo-2 img{
+    height: 70px;
+}
+
+div.menu-button {
+    width: 20%;
+}
+
 div.content{
+    width: 100%;
     display: flex;
     margin-left: -2%;
     margin-right: -2%;
@@ -65,7 +89,13 @@ div.quienes-somos{
     align-items: center;
 }
 div.quienes-somos p{
-    width: 80%;
+    font-size: 25px;
+    width: 70%;
+}
+
+div.quienes-somos h{
+    font-size: 35px;
+
 }
 div.novedades{
     background-color: #FFDFBA;
@@ -114,20 +144,20 @@ div.testimonio-1{
 }
 
 
-div.testimonio-1,div.testimonio-2{
+div.testimonio-1,div.testimonio-2, div.testimonio-3, div.testimonio-4{
    text-align: center;
     margin-bottom: 10%;
     width: 30%;
 }
 
 @media (max-width: 1000px) {
-    div.testimonio-1,div.testimonio-2{
+    div.testimonio-1,div.testimonio-2, div.testimonio-3, div.testimonio-4{
         margin-bottom: 10%;
-        width: 70%;
+        width: 90%;
     }   
 }
 
-div.testimonio-1 img,div.testimonio-2 img{
+div.testimonio-1 img, div.testimonio-2 img, div.testimonio-3 img, div.testimonio-4 img{
     width: 100%;
 }
 
@@ -193,6 +223,7 @@ div.vostambien button.btn-unicavez{
 }
 
 footer{
+    border-top: 2px solid grey;
     text-decoration: #E98F25;
     display: flex;
     flex-direction: column;
@@ -212,7 +243,6 @@ div.redes img{
 }
 
 footer p{
-    
     color: #E98F25;
     margin: 0%;
 }
@@ -225,6 +255,10 @@ footer p{
  footer .contactate, .seguinos {
     margin-top: 10%;
     margin-bottom: 2%;
+ }
+
+ footer .contactate {
+    font-size: 30px;
  }
 
  footer .logo{

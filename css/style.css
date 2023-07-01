@@ -9,35 +9,39 @@ html {
     width: 98.4%;
 }
 
-header {
+body{
+    width: 100%;
+}
+header{
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background: white;
     padding-left: 13px;
     padding-right: 13px;
-    height: 75px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    margin-left: -8px;
-    z-index: 1111;
-    border-bottom: 1px solid #E9E9E9;
+    height: 15%;
+    border-bottom: 2px solid grey;
+}
+
+div.hogar-logo-1 img {
+    height: 70px;
+}
+
+div.hogar-logo-2 {
+    margin-right: 0%;
+}
+
+div.hogar-logo-2 img{
+    height: 70px;
 }
 
 div.menu-button {
-    width: 45px;
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 9px;
-    transition: 0.5s;
+    width: 20%;
 }
-div.menu-button:hover{
-    cursor: pointer;
-}
-div.content {
+
+div.content{
+    width: 100%;
     display: flex;
     margin-left: -2%;
     margin-right: -2%;
@@ -74,7 +78,15 @@ div.colabora .btn-colaborar {
     font-size: 22px;
 }
 
-div.quienes-somos {
+div.banner-chicas {
+    display: flex;
+    justify-content: center;
+}
+
+div.banner-chicas img.foto-chicas{
+    width: 100%;
+}
+div.quienes-somos{
     width: 100%;
     margin-top: 15%;
     margin-bottom: 15%;
@@ -83,9 +95,14 @@ div.quienes-somos {
     justify-content: center;
     align-items: center;
 }
+div.quienes-somos p{
+    font-size: 25px;
+    width: 70%;
+}
 
-div.quienes-somos p {
-    width: 80%;
+div.quienes-somos h{
+    font-size: 35px;
+
 }
 
 div.novedades {
@@ -164,6 +181,141 @@ div.menu{
     font-size: 20px;
     line-height: 55px;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+div.testimonios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+
+div.testimonio-1{
+    margin-top: 5%;
+}
+
+
+div.testimonio-1,div.testimonio-2, div.testimonio-3, div.testimonio-4{
+   text-align: center;
+    margin-bottom: 10%;
+    width: 30%;
+}
+
+@media (max-width: 1000px) {
+    div.testimonio-1,div.testimonio-2, div.testimonio-3, div.testimonio-4{
+        margin-bottom: 10%;
+        width: 90%;
+    }   
+}
+
+div.testimonio-1 img, div.testimonio-2 img, div.testimonio-3 img, div.testimonio-4 img{
+    width: 100%;
+}
+
+div.box-btn-testimonios {
+    width: 96px;
+height: 28px;
+
+border-right: 18;
+border-left: 221;
+}
+
+
+div.testimonios button.btn-testimonios{
+    
+    width: 30%;
+    
+    color: #E9E9E9;
+    border-radius: 9px;
+    padding: 2%;
+    outline: 0;
+    border: none;
+    background-color: #E98F25;
+    color: #E9E9E9;
+    font-size: 20px;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    align-self: end;
+}
+
+div.vostambien {
+    background: #FFDFBA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+div.vostambien div.titulo {
+    margin-top: 5%;
+    text-align: center;
+    width: 50%;
+}
+
+div.vostambien div.subtitulo {
+    text-align: center;
+    width: 60%;
+}
+
+div.vostambien button.btn-asociarme, div.vostambien button.btn-unicavez {
+    margin: 5%;
+    width: 200px;
+    height: 60px;
+    border-radius: 9px;
+    outline: 0;
+    border: none;
+    background-color: #E98F25;
+    color: #E9E9E9;
+    font-size: 22px;
+}
+
+div.vostambien button.btn-unicavez{
+    margin-bottom: 10%;
+}
+
+footer{
+    border-top: 2px solid grey;
+    text-decoration: #E98F25;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.redes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+    
+}
+
+div.redes img{
+    width: 30%
+}
+
+footer p{
+    color: #E98F25;
+    margin: 0%;
+}
+ footer h1{
+    font-weight: bolder;
+    color: #E98F25;
+    margin-bottom: 10%;
+ }
+
+ footer .contactate, .seguinos {
+    margin-top: 10%;
+    margin-bottom: 2%;
+ }
+
+ footer .contactate {
+    font-size: 30px;
+ }
+
+ footer .logo{
+    width: 30%;
+    margin-top: 5%;
+ }
+ 
 
 }
 button.btn-ver-mas{

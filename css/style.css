@@ -1,40 +1,67 @@
-*{
+* {
     font-family: "Montserrat", sans-serif;
 }
-html{
+a{
+    text-decoration: none;
+    color: inherit;
+}
+html {
     width: 98.4%;
 }
-header{
+
+header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background: white;
     padding-left: 13px;
     padding-right: 13px;
-    height: 65px;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: -8px;
+    z-index: 1111;
+    border-bottom: 1px solid #E9E9E9;
 }
-div.content{
+
+div.menu-button {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    transition: 0.5s;
+}
+div.menu-button:hover{
+    cursor: pointer;
+}
+div.content {
     display: flex;
     margin-left: -2%;
     margin-right: -2%;
     flex-direction: column;
+    text-align: center;
 }
-div.colabora{
+
+div.colabora {
     display: flex;
     justify-content: center;
 }
-div.colabora div.foto-hogar{
+
+div.colabora div.foto-hogar {
     width: 100%;
     max-height: 700px;
 }
 
-div.colabora div.foto-hogar img{
+div.colabora div.foto-hogar img {
     object-fit: cover;
     width: 100%;
     height: 700px;
 }
 
-div.colabora .btn-colaborar{
+div.colabora .btn-colaborar {
     position: absolute;
     top: 25rem;
     width: 200px;
@@ -46,7 +73,8 @@ div.colabora .btn-colaborar{
     color: #E9E9E9;
     font-size: 22px;
 }
-div.quienes-somos{
+
+div.quienes-somos {
     width: 100%;
     margin-top: 15%;
     margin-bottom: 15%;
@@ -55,28 +83,37 @@ div.quienes-somos{
     justify-content: center;
     align-items: center;
 }
-div.quienes-somos p{
+
+div.quienes-somos p {
     width: 80%;
 }
-div.novedades{
+
+div.novedades {
     background-color: #FFDFBA;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-div.novedad-1,div.novedad-2{
+
+div.novedad-1,
+div.novedad-2 {
     margin-bottom: 10%;
     width: 30%;
 }
-div.novedad-1 img,div.novedad-2 img{
+
+div.novedad-1 img,
+div.novedad-2 img {
     width: 100%;
 }
+
 @media (max-width: 1000px) {
-    div.novedad-1,div.novedad-2{
+
+    div.novedad-1,
+    div.novedad-2 {
         margin-bottom: 10%;
         width: 70%;
-    }   
+    }
 }
 
 @media (min-width: 1000px) {
@@ -89,7 +126,90 @@ div.novedad-1 img,div.novedad-2 img{
         justify-content: center;
         align-items: center;
         font-size: 25px;
-    } 
+    }
 }
 
+.active-menu {
+    background: #E98F25;
+    transition: 0.5s;
+}
+.hidden{
+    display: none !important;
+    transition: 0.5s;
+}
+div.menu ul{
+    list-style-type: none;
+}
+div.menu li{
+    width: 120%;
+    border-radius: 9px;
+    text-align: center;
+}
+div.menu li:hover{
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+div.menu{
+    width: 260px;
+    height: 390px;
+    position: fixed;
+    left: 16%;
+    margin-top: 55px;
+    background: white;
+    border-radius: 9px;
+    z-index: 9999999999999999;
+    transition: 0.5s;
+    display: flex;
+    justify-content: start;
+    font-size: 20px;
+    line-height: 55px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 
+}
+button.btn-ver-mas{
+    width: 85px;
+    height: 30px;
+    border: none;
+    border-radius: 9px;
+    background: #E98F25;
+    color: #E9E9E9;
+}
+div.menu li.ingreso-socios{
+    color: #E98F25;
+    margin-top: 65px;
+}
+div.menu button.btn-colaborar{
+    width: 100%;
+    height: 45px;
+    border-radius: 9px;
+    border: none;
+    font-size: 18px;
+    background-color: #E98F25;
+    color: #E9E9E9;
+}
+div.menu li.colaborar:hover{
+    background-color: transparent !important;
+}
+div.menu li.colaborar button:hover{
+    cursor: pointer;
+}
+div.nuestra-historia{
+    margin-top: 100px;
+    width: auto;
+    padding: 5%;
+    font-size: 2vh;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-colaborar{
+    width: 200px;
+    height: 60px;
+    border-radius: 9px;
+    outline: 0;
+    border: none;
+    background-color: #E98F25;
+    color: #E9E9E9;
+    font-size: 22px;
+}

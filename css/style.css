@@ -483,7 +483,6 @@ button.btn-ver-mas{
 @media (min-width:800px) {
     button.btn-ver-mas{
         width: 10%;
-        
         border: none;
         font-size: 20px;
         border-radius: 9px;

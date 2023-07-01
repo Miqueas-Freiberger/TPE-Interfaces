@@ -22,30 +22,57 @@
         <div class="hogar-logo-2">
             <img src="images/hogar-logo-2.svg" alt="">
         </div>
+        <div class="user-logged-logo hidden">
+            <img src="images/user-logged.svg" alt="">
+        </div>
     </header>
     <div class="menu hidden">
         <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="nuestra-historia.html"></a>Quienes Somos</a></li>
-            <li>Testimonios</li>
-
-            <li class="ingreso-socios"> <a href="login.html">Ingreso Socios</a></li>
-            <li class="colaborar"><button class="btn-colaborar">COLABORÁ</button></li>
-
+                <li class="hidden opciones-socio" ><a href="menu-socio.html">Opciones Socio</a></li>
+                <li class="ingreso-socios"> <a href="login.html">Ingreso Socios</a></li>
+                <li class="cerrar-sesion hidden"> <a href="login.html">Cerrar Sesión</a></li>
+                <li class="colaborar"><button class="btn-colaborar">COLABORÁ</button></li>
         </ul>
     </div>
     <div class="content-login">
         <div class="form-login">
             <h2>INGRESAR</h2>
             <div class="inputs">
-                <label for="email">Email</label>
-                <input type="text" name="email">
-                <label for="contraseña">Contraseña</label>
-                <input type="password" name="contraseña">
+                <div class="input-mail">
+                    <label for="email">Email</label>
+                    <input type="text" name="email">
+                </div>
+                <div class="input-password">
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" name="contraseña">
+                </div>
             </div>
+            <button class="btn-colaborar" id="loginBtn">Ingresar</button>
+          <!--   <button class="btn-colaborar" id="loginBtn"><a href="menu-socio.html">Ingresar</a></button> -->
+            <p><a href="registro.html" class="register">Aún no sos socio? Asociate</a></p>
         </div>
     </div>
+    <footer>
 
+        <div class="info">
+            <div class="div-redes">
+                <h1 class="Seguinos">Seguinos!</h2>
+                    <div class="redes">
+                        <img src="images/facebook_Svg 1.svg" alt="">
+                        <img src="images/instagram_svg 1.svg" alt="">
+                    </div>
+            </div>
+
+            <div class="contacto">
+                <h1 class="contactate">Contactate con nosotros</h2>
+                    <p>Email: hogarsanjose@gmail.com</p>
+                    <p>Whatsapp: +542284304259</p>
+            </div>
+        </div>
+
+        <img class="logo" src="images/Hogar-sanjose-complete-logo 1.svg" alt="">
+
+    </footer>
 </body>
 
 <script src="js/main.js"></script>

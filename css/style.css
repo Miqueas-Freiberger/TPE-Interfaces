@@ -145,6 +145,7 @@ div.novedad-2 img {
         align-items: center;
         font-size: 25px;
     }
+
 }
 .active-menu {
     background: #E98F25;
@@ -168,7 +169,7 @@ div.menu li:hover{
 }
 div.menu{
     width: 260px;
-    height: 390px;
+    height: auto;
     position: fixed;
     left: 16%;
     margin-top: 55px;
@@ -206,7 +207,8 @@ div.testimonio-1,div.testimonio-2, div.testimonio-3, div.testimonio-4{
     div.testimonio-1,div.testimonio-2, div.testimonio-3, div.testimonio-4{
         margin-bottom: 10%;
         width: 90%;
-    }   
+    }
+    
 }
 
 div.testimonio-1 img, div.testimonio-2 img, div.testimonio-3 img, div.testimonio-4 img{
@@ -279,7 +281,12 @@ div.testimonios button.btn-testimonios{
     div.banner-chicas{
        display: none;
     }
-
+    
+}
+@media (min-width: 500px) {
+    div.novedad-ampliada img{
+        width: 60%;
+    } 
 }
 
 
@@ -407,10 +414,6 @@ footer p{
     font-size: 30px;
  }
 
-
- 
-
-
 button.btn-ver-mas{
     width: 85px;
     height: 30px;
@@ -457,4 +460,46 @@ div.nuestra-historia{
     background-color: #E98F25;
     color: #E9E9E9;
     font-size: 22px;
+}
+
+div.content-menu-socio{
+    margin-left: -2%;
+    margin-right: -2%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+div.options-socio{
+    margin-top: 150px;
+}
+div.content-menu-socio div.modificar-sub,div.dar-baja,div.sumar-testimonio{
+    margin-bottom: 20%;
+}
+div.input-testimonio textarea{
+    border: none;
+    width: 100%;
+    border-radius: 9px;
+}
+p.max-caracter{
+    color: #9E9E9E;
+}
+.enviar-testimonio{
+    margin-bottom: 10%;
+}
+div.novedad-ampliada{
+    width: auto;
+    padding: 5%;
+    font-size: 2vh;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.novedad-ampliada p{
+    width: 60%;
+} 
+div.novedad-ampliada img{
+    margin-bottom: 5%;
 }

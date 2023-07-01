@@ -45,6 +45,7 @@ div.content {
     display: flex;
     margin-left: -2%;
     margin-right: -2%;
+    margin-top: 75px;
     flex-direction: column;
     text-align: center;
 }
@@ -106,7 +107,7 @@ div.quienes-somos h{
 
 }
 
-div.novedades {
+div.novedades{
     background-color: #FFDFBA;
     display: flex;
     flex-direction: column;
@@ -114,25 +115,67 @@ div.novedades {
     text-align: center;
 }
 
+@media (max-width: 1000px) {
+    div.novedades-page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+}
+
 div.novedad-1,
-div.novedad-2 {
+div.novedad-2,
+div.novedad-3,
+div.novedad-4 {
     margin-bottom: 10%;
     width: 30%;
 }
 
 div.novedad-1 img,
-div.novedad-2 img {
+div.novedad-2 img,
+div.novedad-3 img,
+div.novedad-4 img {
     width: 100%;
+}
+
+div.novedad-1 {
+    margin-top: 5%;
 }
 
 @media (max-width: 1000px) {
 
     div.novedad-1,
-    div.novedad-2 {
+    div.novedad-2,
+    div.novedad-3,
+    div.novedad-4{
         margin-bottom: 10%;
         width: 70%;
     }
 }
+
+@media (min-width: 1000px) {
+    div.novedades-page {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.novedad-1 {
+        margin-top: 0%;
+    }
+
+    div.novedades-page div.novedad-1,
+    div.novedad-2,
+    div.novedad-3,
+    div.novedad-4{
+        margin-bottom: 5%;
+        width: 300px;
+    }    
+}
+
 
 @media (min-width: 1000px) {
     div.quienes-somos {
@@ -147,6 +190,8 @@ div.novedad-2 img {
     }
 
 }
+
+
 .active-menu {
     background: #E98F25;
     transition: 0.5s;
@@ -187,7 +232,6 @@ div.testimonios {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 
@@ -375,10 +419,16 @@ footer .logo{
         border-top: 2px solid grey;
         text-decoration: #E98F25;
         display: flex;
-        flex-direction: column;
+        flex-direction: COLUMN;
         align-items: center;
     }
     
+    footer .info{
+        display: flex;
+        flex-direction: row;
+       width: 80%;
+       justify-content: space-between;
+    }
     div.redes img{
         width: 50px;
         border: 10px;
@@ -413,6 +463,8 @@ footer p{
  footer .contactate {
     font-size: 30px;
  }
+
+
 
 button.btn-ver-mas{
     width: 85px;

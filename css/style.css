@@ -413,6 +413,10 @@ footer .logo{
    align-items: center;
 }
 
+div.novedades span{
+    margin-bottom: 3%;
+}
+
 @media (min-width:800px) {
     
     footer{
@@ -467,13 +471,29 @@ footer p{
 
 
 button.btn-ver-mas{
-    width: 85px;
-    height: 30px;
+    width: 30%;
+    height: 50px;
     border: none;
+    font-size: 20px;
     border-radius: 9px;
     background: #E98F25;
     color: #E9E9E9;
 }
+
+@media (min-width:800px) {
+    button.btn-ver-mas{
+        width: 10%;
+        
+        border: none;
+        font-size: 20px;
+        border-radius: 9px;
+        background: #E98F25;
+        color: #E9E9E9;
+    }
+
+}
+
+
 div.menu li.ingreso-socios{
     color: #E98F25;
     margin-top: 65px;
@@ -494,15 +514,20 @@ div.menu li.colaborar button:hover{
     cursor: pointer;
 }
 div.nuestra-historia{
-    margin-top: 100px;
+    
     width: auto;
     padding: 5%;
-    font-size: 2vh;
+    font-size: 3vh;
     text-align: start;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+div.nuestra-historia h1,div.nuestra-historia h3{
+    text-align: center;
+}
+
 .btn-colaborar{
     width: 200px;
     height: 60px;

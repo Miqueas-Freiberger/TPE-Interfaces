@@ -8,7 +8,7 @@ var isLogged = false;
 console.log(localStorage.getItem('isLogged'));
 userLogged()
 if (localStorage.getItem('isLogged') == 'true') {
-    ingresoBtn.innerHTML='<a href="login.html">Cerrar Sesión</a>';
+    ingresoBtn.innerHTML='<a href="index.html">Cerrar Sesión</a>';
     document.querySelector('.opciones-socio').classList.remove('hidden');
 }
 else{
@@ -42,9 +42,10 @@ ingresoBtn.addEventListener('click', function(e){
 function userLogged(){
     console.log(localStorage.getItem('isLogged'));
     if (localStorage.getItem('isLogged') == 'true') {
-        ingresoBtn.innerHTML='<a href="login.html">Cerrar Sesión</a>';
+        ingresoBtn.innerHTML='<a href="index.html">Cerrar Sesión</a>';
         document.querySelector('.opciones-socio').classList.remove('hidden');
         document.querySelector('.hogar-logo-2').classList.add('hidden');
+        
         if(userLoggedLogo != null){
             userLoggedLogo.classList.remove('hidden');
         }

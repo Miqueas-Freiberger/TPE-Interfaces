@@ -27,6 +27,11 @@ div.content-register {
     justify-content: center;
 }
 
+#span-novedades{
+    text-decoration: solid;
+
+}
+
 div.form-register {
     background: #FFDFBA;
     width: 35%;

@@ -20,28 +20,28 @@ header{
     background: white;
     padding-left: 13px;
     padding-right: 13px;
-    height: 15%;
-    border-bottom: 2px solid grey;
-}
-
-div.hogar-logo-1 img {
-    height: 70px;
-}
-
-div.hogar-logo-2 {
-    margin-right: 0%;
-}
-
-div.hogar-logo-2 img{
-    height: 70px;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: -8px;
+    z-index: 1111;
+    border-bottom: 1px solid #E9E9E9;
 }
 
 div.menu-button {
-    width: 20%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    transition: 0.5s;
 }
-
-div.content{
-    width: 100%;
+div.menu-button:hover{
+    cursor: pointer;
+}
+div.content {
     display: flex;
     margin-left: -2%;
     margin-right: -2%;
@@ -86,6 +86,7 @@ div.banner-chicas {
 div.banner-chicas img.foto-chicas{
     width: 100%;
 }
+
 div.quienes-somos{
     width: 100%;
     margin-top: 15%;
@@ -145,7 +146,6 @@ div.novedad-2 img {
         font-size: 25px;
     }
 }
-
 .active-menu {
     background: #E98F25;
     transition: 0.5s;
@@ -181,6 +181,7 @@ div.menu{
     font-size: 20px;
     line-height: 55px;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
 div.testimonios {
     display: flex;
     flex-direction: column;
@@ -317,7 +318,7 @@ footer p{
  }
  
 
-}
+
 button.btn-ver-mas{
     width: 85px;
     height: 30px;

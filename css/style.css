@@ -135,9 +135,10 @@ div.testimonios {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
 
 }
+
+
 
 div.testimonio-1{
     margin-top: 5%;
@@ -187,6 +188,50 @@ div.testimonios button.btn-testimonios{
     align-self: end;
 }
 
+@media (min-width: 800px) {
+    div.box-testimonios {
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 25px;
+    }
+     
+    div.testimonio-1{
+        margin: 0%;
+    }
+
+    div.testimonio-2{
+        margin: 0%;
+    }
+
+    div.testimonios button.btn-testimonios{
+    
+        width: 15%;
+        
+        color: #E9E9E9;
+        border-radius: 9px;
+        padding: 2%;
+        outline: 0;
+        border: none;
+        background-color: #E98F25;
+        color: #E9E9E9;
+        font-size: 20px;
+        margin-bottom: 5%;
+        margin-right: 0%;
+        align-self: center;
+    }
+
+    div.banner-chicas{
+       display: none;
+    }
+
+}
+
+
 div.vostambien {
     background: #FFDFBA;
     display: flex;
@@ -222,25 +267,75 @@ div.vostambien button.btn-unicavez{
     margin-bottom: 10%;
 }
 
+
+
 footer{
     border-top: 2px solid grey;
-    text-decoration: #E98F25;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+
+
 div.redes{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 50%;
-    
+}
+
+div.div-redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+div.redes {
+    width: 60%;
 }
 
 div.redes img{
-    width: 30%
+    width: 100px;
+    border: 10px;
 }
+
+footer .logo{
+    width: 30%;
+    margin-top: 5%;
+ }
+
+ footer .contacto {
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+@media (min-width:800px) {
+    
+    footer{
+        border-top: 2px solid grey;
+        text-decoration: #E98F25;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    div.redes img{
+        width: 50px;
+        border: 10px;
+    }
+
+    div.redes{
+        width: 50%;
+    }
+
+    footer .logo{
+        width: 200px;
+    }
+
+}
+
 
 footer p{
     color: #E98F25;
@@ -261,9 +356,6 @@ footer p{
     font-size: 30px;
  }
 
- footer .logo{
-    width: 30%;
-    margin-top: 5%;
- }
+
  
 

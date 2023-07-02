@@ -4,6 +4,7 @@ var loginButton = document.querySelector('#loginBtn');
 var dropdown = document.querySelector('.dropdown-options')
 var ingresoBtn = document.querySelector('.ingreso-socios');
 var userLoggedLogo = document.querySelector('.user-logged-logo');
+var dataNovedades = document.querySelector('#span-novedades');
 var isLogged = false;
 console.log(localStorage.getItem('isLogged'));
 userLogged()
@@ -49,7 +50,10 @@ function userLogged(){
         if(userLoggedLogo != null){
             userLoggedLogo.classList.remove('hidden');
         }
-        
+        if(dataNovedades != null){
+            dataNovedades.innerHTML = ' ';
+            document.querySelector('.btn-testimonios').classList.remove('hidden');
+        }
     }
     else{
         ingresoBtn.innerHTML='<a href="login.html">Ingreso Socios</a>';
@@ -58,7 +62,11 @@ function userLogged(){
         if(userLoggedLogo != null){
             userLoggedLogo.classList.add('hidden');
         }
-       
+        if(dataNovedades != null){
+            dataNovedades.innerHTML = 'INGRESÁ COMO SOCIO PARA VER TODAS LAS NOVEDADES DEL HOGAR';
+            document.querySelector('.btn-testimonios').classList.add('hidden');
+        }
+
     }
 }
 

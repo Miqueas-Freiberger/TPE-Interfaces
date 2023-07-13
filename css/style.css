@@ -296,7 +296,7 @@ div.testimonios button.btn-testimonios {
 
     color: #E9E9E9;
     border-radius: 9px;
-    padding: 2%;
+    padding: 0%;
     outline: 0;
     border: none;
     background-color: #E98F25;
@@ -632,3 +632,4 @@ div.novedad-ampliada img {
     background-color: #E98F25;
     color: #E9E9E9;
 }
+

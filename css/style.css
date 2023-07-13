@@ -167,7 +167,7 @@ div.novedad-1 {
         margin-top: 0%;
     }
 
-    div.novedades-page div.novedad-1,
+    div.novedad-1,
     div.novedad-2,
     div.novedad-3,
     div.novedad-4{
@@ -439,7 +439,7 @@ div.novedades span{
     }
 
     div.redes{
-        width: 50%;
+        width: 80%;
     }
 
     footer .logo{
